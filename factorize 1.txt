@@ -1,0 +1,12 @@
+user = int(input("Enter a number: "))
+
+factorial = 1
+
+if user < 0:
+    print("Negative number")
+elif user == 0:
+    print(f"The factorial of {user} is 1")
+else:
+    for i in range(1, user + 1):
+        factorial *= i
+    print(f"The factorial of {user} is {factorial}")
